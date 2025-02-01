@@ -383,20 +383,20 @@ const App = () => {
                 <h3 className="text-xl font-bold mb-2">{name}</h3>
                 <audio controls className="w-full mb-2">
                   <source
-                    src={`/src/assets/audio/audio_${index + 1}.wav`}
+                    src={`/src/assets/audio_${index + 1}.wav`}
                     type="audio/mpeg"
                   />
                   Your browser does not support the audio element.
                 </audio>
                 <h3 className="text-lg font-semibold mb-2">Spectrogram</h3>
                 <img
-                  src={`/src/assets/images/spec_${index + 1}.png`}
+                  src={`/src/assets/spec_${index + 1}.png`}
                   alt={`Spectrogram of ${name}`}
                   className="w-full h-32 object-cover mb-2"
                 />
                 <h3 className="text-lg font-semibold mb-2">Waveform</h3>
                 <img
-                  src={`/src/assets/images/wav_${index + 1}.png`}
+                  src={`/src/assets/wav_${index + 1}.png`}
                   alt={`Waveform of ${name}`}
                   className="w-full h-32 object-cover"
                 />
