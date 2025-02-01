@@ -172,17 +172,13 @@ const App = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-
-<h1 className="text-4xl sm:text-5xl font-bold mx-4 sm:mx-16 md:mx-60 lg:mx-80 xl:mx-96 mb-4 text-white drop-shadow-[1px_1px_2px_rgba(255,255,255,0.6)] bg-[rgba(0,0,0,0.5)] px-4 py-2 rounded-md font-['Poppins']">
-  SAS-KIIT
-</h1>
-<p className="text-lg sm:text-xl mx-2 sm:mx-4 md:mx-32 text-white drop-shadow-[1px_1px_2px_rgba(255,255,255,0.6)] bg-[rgba(0,0,0,0.4)] px-3 py-1 rounded-md font-['Montserrat'] mb-3">
-  Urban Sound Audio dataset which contains 21 classes of data from
-  different regional sounds.
-</p>
-
-
-
+              <h1 className="text-4xl sm:text-5xl font-bold mx-4 sm:mx-16 md:mx-60 lg:mx-80 xl:mx-96 mb-4 text-white drop-shadow-[1px_1px_2px_rgba(255,255,255,0.6)] bg-[rgba(0,0,0,0.5)] px-4 py-2 rounded-md font-['Poppins']">
+                SAS-KIIT
+              </h1>
+              <p className="text-lg sm:text-xl mx-2 sm:mx-4 md:mx-32 text-white drop-shadow-[1px_1px_2px_rgba(255,255,255,0.6)] bg-[rgba(0,0,0,0.4)] px-3 py-1 rounded-md font-['Montserrat'] mb-3">
+                Urban Sound Audio dataset which contains 21 classes of data from
+                different regional sounds.
+              </p>
 
               <Link
                 to="dataset"
@@ -387,20 +383,20 @@ const App = () => {
                 <h3 className="text-xl font-bold mb-2">{name}</h3>
                 <audio controls className="w-full mb-2">
                   <source
-                    src={`/src/audio/audio_${index + 1}.wav`}
+                    src={`/src/assets/audio/audio_${index + 1}.wav`}
                     type="audio/mpeg"
                   />
                   Your browser does not support the audio element.
                 </audio>
                 <h3 className="text-lg font-semibold mb-2">Spectrogram</h3>
                 <img
-                  src={`/src/images/spec_${index + 1}.png`}
+                  src={`/src/assets/images/spec_${index + 1}.png`}
                   alt={`Spectrogram of ${name}`}
                   className="w-full h-32 object-cover mb-2"
                 />
                 <h3 className="text-lg font-semibold mb-2">Waveform</h3>
                 <img
-                  src={`/src/images/wav_${index + 1}.png`}
+                  src={`/src/assets/images/wav_${index + 1}.png`}
                   alt={`Waveform of ${name}`}
                   className="w-full h-32 object-cover"
                 />
