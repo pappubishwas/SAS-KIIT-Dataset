@@ -487,7 +487,7 @@ const App = () => {
       ))}
     </div>
   </div>
-</section>
+      </section>
 
 
       {/* Dataset Links Section */}
@@ -498,7 +498,7 @@ const App = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-extrabold text-white mb-16 flex items-center justify-center mt-12">
             <FaLink className="mr-3 text-yellow-400" />
-            SAS-KIIT Dataset Links
+            SAS-KIIT Dataset Links (Dataset not yet published)
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Kaggle Link */}
