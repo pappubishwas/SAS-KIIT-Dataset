@@ -34,6 +34,92 @@ import pic from "./assets/pic.jpg";
 import sir from "./assets/sir.jpg";
 import pappu from "./assets/pappu.jpg";
 
+
+
+import audio1 from "./assets/audio_1.wav";
+import audio2 from "./assets/audio_2.wav";
+import audio3 from "./assets/audio_3.wav";
+import audio4 from "./assets/audio_4.wav";
+import audio5 from "./assets/audio_5.wav";
+import audio6 from "./assets/audio_6.wav";
+import audio7 from "./assets/audio_7.wav";
+import audio8 from "./assets/audio_8.wav";
+import audio9 from "./assets/audio_9.wav";
+import audio10 from "./assets/audio_10.wav";
+import audio11 from "./assets/audio_11.wav";
+import audio12 from "./assets/audio_12.wav";
+import audio13 from "./assets/audio_13.wav";
+import audio14 from "./assets/audio_14.wav";
+import audio15 from "./assets/audio_15.wav";
+import audio16 from "./assets/audio_16.wav";
+import audio17 from "./assets/audio_17.wav";
+import audio18 from "./assets/audio_18.wav";
+import audio19 from "./assets/audio_19.wav";
+import audio20 from "./assets/audio_20.wav";
+import audio21 from "./assets/audio_21.wav";
+
+import spec1 from "./assets/spec_1.png";
+import spec2 from "./assets/spec_2.png";
+import spec3 from "./assets/spec_3.png";
+import spec4 from "./assets/spec_4.png";
+import spec5 from "./assets/spec_5.png";
+import spec6 from "./assets/spec_6.png";
+import spec7 from "./assets/spec_7.png";
+import spec8 from "./assets/spec_8.png";
+import spec9 from "./assets/spec_9.png";
+import spec10 from "./assets/spec_10.png";
+import spec11 from "./assets/spec_11.png";
+import spec12 from "./assets/spec_12.png";
+import spec13 from "./assets/spec_13.png";
+import spec14 from "./assets/spec_14.png";
+import spec15 from "./assets/spec_15.png";
+import spec16 from "./assets/spec_16.png";
+import spec17 from "./assets/spec_17.png";
+import spec18 from "./assets/spec_18.png";
+import spec19 from "./assets/spec_19.png";
+import spec20 from "./assets/spec_20.png";
+import spec21 from "./assets/spec_21.png";
+
+import wave1 from "./assets/wav_1.png";
+import wave2 from "./assets/wav_2.png";
+import wave3 from "./assets/wav_3.png";
+import wave4 from "./assets/wav_4.png";
+import wave5 from "./assets/wav_5.png";
+import wave6 from "./assets/wav_6.png";
+import wave7 from "./assets/wav_7.png";
+import wave8 from "./assets/wav_8.png";
+import wave9 from "./assets/wav_9.png";
+import wave10 from "./assets/wav_10.png";
+import wave11 from "./assets/wav_11.png";
+import wave12 from "./assets/wav_12.png";
+import wave13 from "./assets/wav_13.png";
+import wave14 from "./assets/wav_14.png";
+import wave15 from "./assets/wav_15.png";
+import wave16 from "./assets/wav_16.png";
+import wave17 from "./assets/wav_17.png";
+import wave18 from "./assets/wav_18.png";
+import wave19 from "./assets/wav_19.png";
+import wave20 from "./assets/wav_20.png";
+import wave21 from "./assets/wav_21.png";
+
+const audioFiles = [
+  audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8, audio9, audio10,
+  audio11, audio12, audio13, audio14, audio15, audio16, audio17, audio18, audio19, audio20, audio21
+];
+
+const specImages = [
+  spec1, spec2, spec3, spec4, spec5, spec6, spec7, spec8, spec9, spec10,
+  spec11, spec12, spec13, spec14, spec15, spec16, spec17, spec18, spec19, spec20, spec21
+];
+
+const waveImages = [
+  wave1, wave2, wave3, wave4, wave5, wave6, wave7, wave8, wave9, wave10,
+  wave11, wave12, wave13, wave14, wave15, wave16, wave17, wave18, wave19, wave20, wave21
+];
+
+
+
+
 const class_names = [
   "Tanpura",
   "Traditional Song",
@@ -57,6 +143,8 @@ const class_names = [
   "Rickshaw Horn",
   "Afganisthan Pashto Music",
 ];
+
+
 
 const App = () => {
   return (
@@ -370,41 +458,37 @@ const App = () => {
       </section>
 
       <section className="bg-gray-100 py-10">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-8">
-            Audio Collection
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {class_names.map((name, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center"
-              >
-                <h3 className="text-xl font-bold mb-2">{name}</h3>
-                <audio controls className="w-full mb-2">
-                  <source
-                    src={`/src/assets/audio_${index + 1}.wav`}
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-                <h3 className="text-lg font-semibold mb-2">Spectrogram</h3>
-                <img
-                  src={`/src/assets/spec_${index + 1}.png`}
-                  alt={`Spectrogram of ${name}`}
-                  className="w-full h-32 object-cover mb-2"
-                />
-                <h3 className="text-lg font-semibold mb-2">Waveform</h3>
-                <img
-                  src={`/src/assets/wav_${index + 1}.png`}
-                  alt={`Waveform of ${name}`}
-                  className="w-full h-32 object-cover"
-                />
-              </div>
-            ))}
-          </div>
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-8">Audio Collection</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {class_names.map((name, index) => (
+        <div
+          key={index}
+          className="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center"
+        >
+          <h3 className="text-xl font-bold mb-2">{name}</h3>
+          <audio controls className="w-full mb-2">
+            <source src={audioFiles[index]} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <h3 className="text-lg font-semibold mb-2">Spectrogram</h3>
+          <img
+            src={specImages[index]}
+            alt={`Spectrogram of ${name}`}
+            className="w-full h-32 object-cover mb-2"
+          />
+          <h3 className="text-lg font-semibold mb-2">Waveform</h3>
+          <img
+            src={waveImages[index]}
+            alt={`Waveform of ${name}`}
+            className="w-full h-32 object-cover"
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Dataset Links Section */}
       <section
