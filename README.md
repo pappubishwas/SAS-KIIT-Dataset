@@ -4,7 +4,7 @@
 The **South Asian Sound Audio** dataset is a collection of regional sounds from South Asia, designed for **audio classification and machine learning** tasks. It provides **21 distinct audio classes**, featuring sounds from various South Asian cultures, environments, and everyday life.
 
 ## 📂 Dataset Details
-- **Total Audio Files:** 1,500  
+- **Total Audio Files:** 9450  
 - **Annotation Format:** Text labels  
 - **Total Classes:** 21 distinct South Asian sound categories  
 - **Sampling Rate:** 44.1 kHz  
@@ -40,8 +40,8 @@ Each audio file is labeled with its respective category to enable classification
 ## 📥 Download Links
 You can access the dataset from multiple sources:
 
-- **📌 Kaggle:** [South Asian Sound Audio Dataset](https://www.kaggle.com/datasets/username/south-asian-sound-audio)  
-- **📌 Google Drive:** [Download Here](https://drive.google.com/drive/folders/link)  
+- **📌 Kaggle:** [South Asian Sound Audio Dataset](https://www.kaggle.com/datasets/sudipchakrabarty/south-asian-sounds-kiit)  
+- **📌 Google Drive:** [Download Here](https://drive.google.com/drive/folders/1HaHR8lAVr6NLFZ-sIaQ_GQzVVly56wq-)  
 - **📌 Mega:** [Mega Download](https://mega.nz/folder/yourlink)  
 
 ## 🏗 Data Collection & Annotation
@@ -108,7 +108,6 @@ For any questions or contributions, feel free to reach out via email or connect 
 📧 **Email:** pappuovi8@gmail.com  
 📧 **Email:** sudipchakrabarty6@gmail.com  
 
-🔗 **GitHub Repo:** [South Asian Sound Audio Dataset](https://github.com/Sudip-329/south-asian-sound-audio)
 
 ---
 

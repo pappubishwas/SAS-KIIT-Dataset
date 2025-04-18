@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import {
   FaExternalLinkAlt,
   FaDownload,
-  // FaUserTie,
-  // FaEnvelope,
-  // FaLinkedin,
+  FaUserTie,
+  FaEnvelope,
+  FaLinkedin,
   FaLink,
-  // FaGithub,
+  FaGithub,
   FaCheckCircle,
   FaExclamationCircle,
   FaDatabase,
-  // FaUsers,
+  FaUsers,
   FaChartPie,
   FaShieldAlt,
   FaTools,
@@ -21,18 +21,19 @@ import {
   FaListOl,
   FaGlobe,
   FaStar,
-  FaCut,
+  FaCut, 
 } from "react-icons/fa";
 import img1 from "./assets/bgimg.jpg";
 import { SiMega } from "react-icons/si";
 import { GiInspiration } from "react-icons/gi";
 import { DiGoogleDrive } from "react-icons/di";
 
-// import sudip from "./assets/sudip.jpeg";
-// import mentor from "./assets/tothagoto.jpeg";
+
+import sudip from "./assets/sudip.jpeg";
+import mentor from "./assets/tothagoto.jpeg";
 import pic from "./assets/pic.jpg";
-// import sir from "./assets/sir.jpg";
-// import pappu from "./assets/pappu.jpg";
+import sir from "./assets/sir.jpg";
+import pappu from "./assets/pappu.jpg";
 
 
 
@@ -141,7 +142,7 @@ const class_names = [
   "Kalboishakhi Storm",
   "Sanatan Religion Aroti",
   "Rickshaw Horn",
-  "Afganisthan Pashto Music",
+  "Afghanistan Pashto Music",
 ];
 
 
@@ -264,8 +265,7 @@ const App = () => {
                 SAS-KIIT
               </h1>
               <p className="text-lg sm:text-xl mx-2 sm:mx-4 md:mx-32 text-white drop-shadow-[1px_1px_2px_rgba(255,255,255,0.6)] bg-[rgba(0,0,0,0.4)] px-3 py-1 rounded-md font-['Montserrat'] mb-3">
-                Urban Sound Audio dataset which contains 21 classes of data from
-                different regional sounds.
+              A diverse urban sound dataset capturing regional audio patterns from South Asia.
               </p>
 
               <Link
@@ -311,8 +311,7 @@ const App = () => {
             />
           </div>
           <p className="text-center mb-6 text-sm text-gray-300">
-            Fig: Sample Sound Clips from the South Asian Sound Dataset
-            (SAS-KIIT).
+          A Glimpse of the Sounds: Visual Representations of Audio Classes
           </p>
 
           {/* Data Collection */}
@@ -320,12 +319,10 @@ const App = () => {
             <FaDatabase className="mr-3 text-4xl" />
             Data Collection
           </h3>
-          <p className="leading-relaxed mb-8 text-lg max-w-2xl mx-auto">
-            The SAS-KIIT dataset was compiled from various South Asian urban
-            areas, showcasing a rich diversity of sounds. These include noises
-            from bustling streets, regional festivals, urban nature, and more.
-            This collection is ideal for developing robust sound classification
-            models tailored for urban sound analysis in South Asia.
+          <p className="leading-relaxed mb-8 text-lg max-w-2xl mx-auto text-justify ">
+          The SAS-KIIT dataset was compiled from various South Asian urban areas, mainly from Bangladesh, India, 
+          Nepal, Afghanistan, and Bhutan, showcasing a rich diversity of sounds. These include noises from bustling streets, regional festivals, 
+          urban nature, and more. This collection is ideal for developing robust sound classification models tailored for urban sound analysis in South Asia.
           </p>
 
           {/* Data Segmentation */}
@@ -333,12 +330,10 @@ const App = () => {
             <FaCut className="mr-3 text-4xl" />
             Data Segmentation
           </h3>
-          <p className="leading-relaxed mb-8 text-lg max-w-2xl mx-auto">
-            To ensure consistency and facilitate better model training, the
-            audio recordings were segmented into 4-second intervals. Each class
-            includes 450 distinct audio segments, creating a total of 9,450
-            segments. These segments are organized systematically, ensuring
-            efficient access and processing for subsequent analysis.
+          <p className="leading-relaxed mb-8 text-lg max-w-2xl mx-auto text-justify">
+          To ensure consistency and facilitate better model training, the audio recordings were segmented into 4-second intervals. 
+          Each class includes 450 distinct audio segments, creating a total of 9,450 segments. These segments are systematically organized and 
+          distributed in a 10-fold manner, enabling efficient access, processing, and cross-validation for subsequent analysis.
           </p>
 
           {/* 21 Sound Classes */}
@@ -387,7 +382,7 @@ const App = () => {
                   High-Quality Audio Segments
                 </h3>
                 <p className="text-gray-200 leading-relaxed text-lg">
-                  The dataset includes over 9,000 meticulously segmented
+                  The dataset includes over 9,450 meticulously segmented
                   4-second audio clips, offering high-quality data ideal for
                   real-time classification tasks.
                 </p>
@@ -432,9 +427,7 @@ const App = () => {
                   Augmentation Techniques
                 </h3>
                 <p className="text-gray-200 leading-relaxed text-lg">
-                  The dataset supports various augmentation techniques, such as
-                  noise addition and time-stretching, to help improve model
-                  generalization.
+                The current version of the dataset does not include any built-in augmentation techniques.
                 </p>
               </div>
             </div>
@@ -457,9 +450,12 @@ const App = () => {
         </div>
       </section>
 
+
+      {/*From Sound to Signal: Audio Snapshots*/}
+
       <section className="bg-gray-100 py-10">
   <div className="container mx-auto px-6">
-    <h2 className="text-3xl font-bold text-center mb-8">Audio Collection</h2>
+    <h2 className="text-3xl font-bold text-center mb-8">From Sound to Signal: Audio Snapshots</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {class_names.map((name, index) => (
         <div
@@ -498,7 +494,7 @@ const App = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-extrabold text-white mb-16 flex items-center justify-center mt-12">
             <FaLink className="mr-3 text-yellow-400" />
-            SAS-KIIT Dataset Links (Dataset not yet published)
+            SAS-KIIT Dataset Links 
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Kaggle Link */}
@@ -513,7 +509,7 @@ const App = () => {
                   and examples.
                 </p>
                 <a
-                  href=""
+                  href="https://www.kaggle.com/datasets/sudipchakrabarty/south-asian-sounds-kiit"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 mt-4 inline-block hover:underline text-lg"
@@ -535,7 +531,7 @@ const App = () => {
                   research and analysis.
                 </p>
                 <a
-                  href=""
+                  href="https://drive.google.com/drive/folders/1HaHR8lAVr6NLFZ-sIaQ_GQzVVly56wq-?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-600 mt-4 inline-block hover:underline text-lg"
@@ -588,6 +584,41 @@ const App = () => {
               creators if this dataset is utilized in any project or
               publication.
             </p>
+            
+
+
+            <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 mb-6 rounded-lg shadow-md">
+  <h3 className="text-2xl font-semibold text-indigo-600 mb-2 flex items-center">
+
+    Citation
+  </h3>
+  <p className="text-gray-700 text-xl mb-2">
+    If you use this dataset in your research, please cite the following paper:
+  </p>
+  <a
+    href="https://ieeexplore.ieee.org/document/10829485"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-indigo-600 underline text-xl mb-2 inline-block"
+  >
+    Paper Link
+  </a>
+  <pre className="bg-gray-100 p-4 rounded text-sm overflow-x-auto mt-2">
+    <code>
+      {`@inproceedings{chatterjee2024south,
+  title={South Asian Sounds: Audio Classification},
+  author={Chatterjee, Rajdeep and Bishwas, Pappu and Chakrabarty, Sudip and Bandyopadhyay, Tathagata},
+  booktitle={2024 4th International Conference on Computer, Communication, Control & Information Technology (C3IT)},
+  pages={1--6},
+  year={2024},
+  organization={IEEE}
+}`}
+    </code>
+  </pre>
+</div>
+
+
+
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 mb-6 rounded-lg shadow-md">
               <h3 className="text-2xl font-semibold text-indigo-600 mb-2 flex items-center">
                 <GiInspiration className="mr-2 text-indigo-400" />
@@ -602,27 +633,28 @@ const App = () => {
               </p>
             </div>
             <div className="space-y-4">
-              <div className="flex items-start space-x-4">
-                <FaCheckCircle className="text-green-500 text-2xl" />
-                <p className="text-gray-800 text-xl">
-                  The dataset may only be used for academic research,
-                  proof-of-concept models, or non-commercial purposes.
-                </p>
-              </div>
-              <div className="flex items-start space-x-4">
-                <FaCheckCircle className="text-green-500 text-2xl" />
-                <p className="text-gray-800 text-xl">
-                  Redistribution of the dataset without proper permission from
-                  the authors is prohibited.
-                </p>
-              </div>
-              <div className="flex items-start space-x-4">
-                <FaCheckCircle className="text-green-500 text-2xl" />
-                <p className="text-gray-800 text-xl">
-                  If this dataset is used in a publication or project, full
-                  credit must be provided to the creators.
-                </p>
-              </div>
+
+            <div className="flex items-start space-x-4">
+  <FaCheckCircle className="text-green-500 text-2xl" />
+  <p className="text-gray-800 text-xl">
+    This dataset is intended solely for academic research, experimental models, and other non-commercial uses.
+  </p>
+</div>
+<div className="flex items-start space-x-4">
+  <FaCheckCircle className="text-green-500 text-2xl" />
+  <p className="text-gray-800 text-xl">
+    Redistributing the dataset without prior authorization from the authors is strictly prohibited.
+  </p>
+</div>
+<div className="flex items-start space-x-4">
+  <FaCheckCircle className="text-green-500 text-2xl" />
+  <p className="text-gray-800 text-xl">
+  Proper attribution to the dataset&apos;s creators is required when used in any project or publication.
+</p>
+
+</div>
+
+
               {/* License */}
               <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 mb-6 rounded-lg shadow-md">
                 <h3 className="text-2xl font-semibold text-indigo-600 mb-2 flex items-center">
@@ -648,6 +680,176 @@ const App = () => {
         </div>
       </section>
 
+      {/* Contributors Section */}
+      <section
+        id="contributors"
+        className="bg-gradient-to-r from-teal-900 to-teal-900 py-16"
+      >
+        <div className="container mx-auto px-6 mt-16">
+          <h3 className="text-4xl font-extrabold text-white mb-12 text-center flex items-center justify-center">
+            <FaUsers className="mr-3 text-white" />
+            Our Team
+          </h3>
+
+          {/* Grid Layout for Contributors, Mentor, and Advisor */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 place-items-center">
+            {/* Contributor Cards */}
+            {[
+              {
+                name: "Sudip Chakrabarty",
+                email: "sudipchakrabarty6@gmail.com",
+                img: sudip,
+                github: "https://github.com/Sudip-329",
+                linkedin: "https://www.linkedin.com/in/sudipchakrabarty329",
+              },
+              {
+                name: "Pappu Bishwas",
+                email: "pappuovi8@gmail.com",
+                img: pappu,
+                github: "https://github.com/pappubishwas",
+                linkedin: "https://www.linkedin.com/in/pappu-bishwas-tan87/",
+              },
+            ].map((contributor, index) => (
+              <div
+                key={index}
+                className="relative bg-white shadow-lg rounded-3xl p-4 max-w-xs w-full flex flex-col items-center text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-teal-300 h-full"
+              >
+                {index < 2 && (
+                  <span className="absolute top-2 left-2 bg-teal-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Our Contributor
+                  </span>
+                )}
+                <img
+                  src={contributor.img}
+                  alt={contributor.name}
+                  className="w-32 h-32 rounded-full border-4 border-teal-400 mb-4 shadow-md object-cover"
+                />
+                <h4 className="text-xl font-bold text-gray-800">
+                  {contributor.name}
+                </h4>
+                <p className="text-sm text-gray-600">
+                  School of Computer Engineering, KIIT Bhubaneswar
+                </p>
+
+                <div className="flex space-x-3 mt-4">
+                  <a
+                    href={`mailto:${contributor.email}`}
+                    className="w-8 h-8 flex items-center justify-center bg-teal-100 text-teal-600 rounded-full text-sm hover:bg-teal-200 transition-all"
+                    title="Send Email"
+                  >
+                    <FaEnvelope />
+                  </a>
+                  <a
+                    href={contributor.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 flex items-center justify-center bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 transition-all"
+                    title="GitHub"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href={contributor.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 flex items-center justify-center bg-teal-100 text-teal-600 rounded-full text-sm hover:bg-teal-200 transition-all"
+                    title="LinkedIn"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </div>
+              </div>
+            ))}
+
+            {/* Mentor Card */}
+            <div className="bg-white bg-opacity-10 backdrop-blur-lg shadow-xl rounded-2xl p-6 max-w-xs flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-2xl h-full">
+              <h3 className="text-xl font-semibold text-yellow-400 mb-3 flex items-center">
+                <FaUserTie className="mr-2 text-yellow-400" />
+                Our Mentor
+              </h3>
+              <img
+                src={mentor}
+                alt="Dr. Rajdeep Chatterjee"
+                className="w-32 h-32 rounded-full border-4 border-yellow-400 mb-3 shadow-lg"
+              />
+              <h4 className="text-lg text-black font-bold">
+                {" "}
+                Tathagata Bandyopadhyay
+              </h4>
+              <p className="text-black text-xs text-center">
+                Visual Computing Lab, Technical University of Munich, Germany
+              </p>
+              <div className="flex space-x-3 mt-3">
+                <a
+                  href="https://scholar.google.com/citations?user=GuH4taUAAAAJ&hl=en&oi=sra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGlobe className="text-lg text-yellow-600 hover:text-white transition duration-200" />
+                </a>
+                <a
+                  href="https://github.com/tatban/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-lg text-yellow-600 hover:text-white transition duration-200" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/tathagata-bandyopadhyay/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-lg text-yellow-600 hover:text-yellow-300 transition duration-200" />
+                </a>
+              </div>
+            </div>
+
+            {/* Advisor Card */}
+            <div className="bg-white bg-opacity-10 backdrop-blur-lg shadow-xl rounded-2xl p-6 max-w-xs flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-2xl h-full">
+              <h3 className="text-xl font-semibold text-purple-400 mb-3 flex items-center">
+                <FaUserTie className="mr-2 text-purple-400" />
+                Our Advisor
+              </h3>
+              <img
+                src={sir}
+                alt="Advisor Image"
+                className="w-32 h-32 rounded-full border-4 border-purple-400 mb-3 shadow-lg"
+              />
+              <h4 className="text-lg text-black font-bold">
+                Dr. Rajdeep Chatterjee
+              </h4>
+              <p className="text-black text-xs text-center">
+                Associate Professor,School of Computer Engineering, KIIT
+                Bhubaneswar
+              </p>
+              <div className="flex space-x-3 mt-3">
+                <a
+                  href="https://sites.google.com/kiit.ac.in/rajdeep/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGlobe className="text-lg text-purple-600 hover:text-white transition duration-200" />
+                </a>
+                <a
+                  href="https://github.com/cserajdeep"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-lg text-purple-600 hover:text-white transition duration-200" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/rajdeep-chatterjee-ph-d-60352325"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-lg text-purple-600 hover:text-purple-300 transition duration-200" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Footer */}
       <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-6">
@@ -660,25 +862,20 @@ const App = () => {
           {/* Links */}
           <div className="flex justify-center space-x-6 mt-2">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/pappu-bishwas-tan87/"
               className="text-white hover:text-blue-400 transition duration-200"
             >
               About
             </a>
+
             <a
-              href="#"
-              className="text-white hover:text-blue-400 transition duration-200"
-            >
-              Research Papers
-            </a>
-            <a
-              href="#"
+              href="https://ieeexplore.ieee.org/document/10829485"
               className="text-white hover:text-blue-400 transition duration-200"
             >
               Publications
             </a>
             <a
-              href="#"
+              href="#contributors"
               className="text-white hover:text-blue-400 transition duration-200"
             >
               Contact Us
@@ -688,7 +885,7 @@ const App = () => {
           {/* Social Media Icons */}
           <div className="flex justify-center space-x-6 mt-4">
             <a
-              href="https://github.com/sas-kiit"
+              href="https://github.com/pappubishwas/SAS-KIIT-Dataset"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -702,7 +899,7 @@ const App = () => {
               <i className="fab fa-linkedin text-2xl hover:text-blue-500"></i>
             </a>
             <a
-              href="https://sas-kiit.com"
+              href="https://kiitee.kiit.ac.in/"
               target="_blank"
               rel="noopener noreferrer"
             >
