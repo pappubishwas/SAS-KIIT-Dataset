@@ -21,21 +21,18 @@ import {
   FaListOl,
   FaGlobe,
   FaStar,
-  FaCut, 
+  FaCut,
 } from "react-icons/fa";
 import img1 from "./assets/bgimg.jpg";
 import { SiMega } from "react-icons/si";
 import { GiInspiration } from "react-icons/gi";
 import { DiGoogleDrive } from "react-icons/di";
 
-
 import sudip from "./assets/sudip.jpeg";
 import mentor from "./assets/tothagoto.jpeg";
 import pic from "./assets/pic.jpg";
 import sir from "./assets/sir.jpg";
 import pappu from "./assets/pappu.jpg";
-
-
 
 import audio1 from "./assets/audio_1.wav";
 import audio2 from "./assets/audio_2.wav";
@@ -104,22 +101,76 @@ import wave20 from "./assets/wav_20.png";
 import wave21 from "./assets/wav_21.png";
 
 const audioFiles = [
-  audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8, audio9, audio10,
-  audio11, audio12, audio13, audio14, audio15, audio16, audio17, audio18, audio19, audio20, audio21
+  audio1,
+  audio2,
+  audio3,
+  audio4,
+  audio5,
+  audio6,
+  audio7,
+  audio8,
+  audio9,
+  audio10,
+  audio11,
+  audio12,
+  audio13,
+  audio14,
+  audio15,
+  audio16,
+  audio17,
+  audio18,
+  audio19,
+  audio20,
+  audio21,
 ];
 
 const specImages = [
-  spec1, spec2, spec3, spec4, spec5, spec6, spec7, spec8, spec9, spec10,
-  spec11, spec12, spec13, spec14, spec15, spec16, spec17, spec18, spec19, spec20, spec21
+  spec1,
+  spec2,
+  spec3,
+  spec4,
+  spec5,
+  spec6,
+  spec7,
+  spec8,
+  spec9,
+  spec10,
+  spec11,
+  spec12,
+  spec13,
+  spec14,
+  spec15,
+  spec16,
+  spec17,
+  spec18,
+  spec19,
+  spec20,
+  spec21,
 ];
 
 const waveImages = [
-  wave1, wave2, wave3, wave4, wave5, wave6, wave7, wave8, wave9, wave10,
-  wave11, wave12, wave13, wave14, wave15, wave16, wave17, wave18, wave19, wave20, wave21
+  wave1,
+  wave2,
+  wave3,
+  wave4,
+  wave5,
+  wave6,
+  wave7,
+  wave8,
+  wave9,
+  wave10,
+  wave11,
+  wave12,
+  wave13,
+  wave14,
+  wave15,
+  wave16,
+  wave17,
+  wave18,
+  wave19,
+  wave20,
+  wave21,
 ];
-
-
-
 
 const class_names = [
   "Tanpura",
@@ -144,8 +195,6 @@ const class_names = [
   "Rickshaw Horn",
   "Afghanistan Pashto Music",
 ];
-
-
 
 const App = () => {
   return (
@@ -265,7 +314,8 @@ const App = () => {
                 SAS-KIIT
               </h1>
               <p className="text-lg sm:text-xl mx-2 sm:mx-4 md:mx-32 text-white drop-shadow-[1px_1px_2px_rgba(255,255,255,0.6)] bg-[rgba(0,0,0,0.4)] px-3 py-1 rounded-md font-['Montserrat'] mb-3">
-              A diverse urban sound dataset capturing regional audio patterns from South Asia.
+                A diverse urban sound dataset capturing regional audio patterns
+                from South Asia.
               </p>
 
               <Link
@@ -311,7 +361,7 @@ const App = () => {
             />
           </div>
           <p className="text-center mb-6 text-sm text-gray-300">
-          A Glimpse of the Sounds: Visual Representations of Audio Classes
+            A Glimpse of the Sounds: Visual Representations of Audio Classes
           </p>
 
           {/* Data Collection */}
@@ -320,9 +370,12 @@ const App = () => {
             Data Collection
           </h3>
           <p className="leading-relaxed mb-8 text-lg max-w-2xl mx-auto text-justify ">
-          The SAS-KIIT dataset was compiled from various South Asian urban areas, mainly from Bangladesh, India, 
-          Nepal, Afghanistan, and Bhutan, showcasing a rich diversity of sounds. These include noises from bustling streets, regional festivals, 
-          urban nature, and more. This collection is ideal for developing robust sound classification models tailored for urban sound analysis in South Asia.
+            The SAS-KIIT dataset was compiled from various South Asian urban
+            areas, mainly from Bangladesh, India, Nepal, Afghanistan, and
+            Bhutan, showcasing a rich diversity of sounds. These include noises
+            from bustling streets, regional festivals, urban nature, and more.
+            This collection is ideal for developing robust sound classification
+            models tailored for urban sound analysis in South Asia.
           </p>
 
           {/* Data Segmentation */}
@@ -331,9 +384,12 @@ const App = () => {
             Data Segmentation
           </h3>
           <p className="leading-relaxed mb-8 text-lg max-w-2xl mx-auto text-justify">
-          To ensure consistency and facilitate better model training, the audio recordings were segmented into 4-second intervals. 
-          Each class includes 450 distinct audio segments, creating a total of 9,450 segments. These segments are systematically organized and 
-          distributed in a 10-fold manner, enabling efficient access, processing, and cross-validation for subsequent analysis.
+            To ensure consistency and facilitate better model training, the
+            audio recordings were segmented into 4-second intervals. Each class
+            includes 450 distinct audio segments, creating a total of 9,450
+            segments. These segments are systematically organized and
+            distributed in a 10-fold manner, enabling efficient access,
+            processing, and cross-validation for subsequent analysis.
           </p>
 
           {/* 21 Sound Classes */}
@@ -427,7 +483,8 @@ const App = () => {
                   Augmentation Techniques
                 </h3>
                 <p className="text-gray-200 leading-relaxed text-lg">
-                The current version of the dataset does not include any built-in augmentation techniques.
+                  The current version of the dataset does not include any
+                  built-in augmentation techniques.
                 </p>
               </div>
             </div>
@@ -450,41 +507,41 @@ const App = () => {
         </div>
       </section>
 
-
       {/*From Sound to Signal: Audio Snapshots*/}
 
       <section className="bg-gray-100 py-10">
-  <div className="container mx-auto px-6">
-    <h2 className="text-3xl font-bold text-center mb-8">From Sound to Signal: Audio Snapshots</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      {class_names.map((name, index) => (
-        <div
-          key={index}
-          className="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center"
-        >
-          <h3 className="text-xl font-bold mb-2">{name}</h3>
-          <audio controls className="w-full mb-2">
-            <source src={audioFiles[index]} type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-          <h3 className="text-lg font-semibold mb-2">Spectrogram</h3>
-          <img
-            src={specImages[index]}
-            alt={`Spectrogram of ${name}`}
-            className="w-full h-32 object-cover mb-2"
-          />
-          <h3 className="text-lg font-semibold mb-2">Waveform</h3>
-          <img
-            src={waveImages[index]}
-            alt={`Waveform of ${name}`}
-            className="w-full h-32 object-cover"
-          />
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            From Sound to Signal: Audio Snapshots
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {class_names.map((name, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center"
+              >
+                <h3 className="text-xl font-bold mb-2">{name}</h3>
+                <audio controls className="w-full mb-2">
+                  <source src={audioFiles[index]} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+                <h3 className="text-lg font-semibold mb-2">Spectrogram</h3>
+                <img
+                  src={specImages[index]}
+                  alt={`Spectrogram of ${name}`}
+                  className="w-full h-32 object-cover mb-2"
+                />
+                <h3 className="text-lg font-semibold mb-2">Waveform</h3>
+                <img
+                  src={waveImages[index]}
+                  alt={`Waveform of ${name}`}
+                  className="w-full h-32 object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
       </section>
-
 
       {/* Dataset Links Section */}
       <section
@@ -494,7 +551,7 @@ const App = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-extrabold text-white mb-16 flex items-center justify-center mt-12">
             <FaLink className="mr-3 text-yellow-400" />
-            SAS-KIIT Dataset Links 
+            SAS-KIIT Dataset Links
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Kaggle Link */}
@@ -584,28 +641,26 @@ const App = () => {
               creators if this dataset is utilized in any project or
               publication.
             </p>
-            
-
 
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 mb-6 rounded-lg shadow-md">
-  <h3 className="text-2xl font-semibold text-indigo-600 mb-2 flex items-center">
-
-    Citation
-  </h3>
-  <p className="text-gray-700 text-xl mb-2">
-    If you use this dataset in your research, please cite the following paper:
-  </p>
-  <a
-    href="https://ieeexplore.ieee.org/document/10829485"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-indigo-600 underline text-xl mb-2 inline-block"
-  >
-    Paper Link
-  </a>
-  <pre className="bg-gray-100 p-4 rounded text-sm overflow-x-auto mt-2">
-    <code>
-      {`@inproceedings{chatterjee2024south,
+              <h3 className="text-2xl font-semibold text-indigo-600 mb-2 flex items-center">
+                Citation
+              </h3>
+              <p className="text-gray-700 text-xl mb-2">
+                If you use this dataset in your research, please cite the
+                following paper:
+              </p>
+              <a
+                href="https://ieeexplore.ieee.org/document/10829485"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 underline text-xl mb-2 inline-block"
+              >
+                Paper Link
+              </a>
+              <pre className="bg-gray-100 p-4 rounded text-sm overflow-x-auto mt-2">
+                <code>
+                  {`@inproceedings{chatterjee2024south,
   title={South Asian Sounds: Audio Classification},
   author={Chatterjee, Rajdeep and Bishwas, Pappu and Chakrabarty, Sudip and Bandyopadhyay, Tathagata},
   booktitle={2024 4th International Conference on Computer, Communication, Control & Information Technology (C3IT)},
@@ -613,11 +668,9 @@ const App = () => {
   year={2024},
   organization={IEEE}
 }`}
-    </code>
-  </pre>
-</div>
-
-
+                </code>
+              </pre>
+            </div>
 
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 mb-6 rounded-lg shadow-md">
               <h3 className="text-2xl font-semibold text-indigo-600 mb-2 flex items-center">
@@ -633,27 +686,27 @@ const App = () => {
               </p>
             </div>
             <div className="space-y-4">
-
-            <div className="flex items-start space-x-4">
-  <FaCheckCircle className="text-green-500 text-2xl" />
-  <p className="text-gray-800 text-xl">
-    This dataset is intended solely for academic research, experimental models, and other non-commercial uses.
-  </p>
-</div>
-<div className="flex items-start space-x-4">
-  <FaCheckCircle className="text-green-500 text-2xl" />
-  <p className="text-gray-800 text-xl">
-    Redistributing the dataset without prior authorization from the authors is strictly prohibited.
-  </p>
-</div>
-<div className="flex items-start space-x-4">
-  <FaCheckCircle className="text-green-500 text-2xl" />
-  <p className="text-gray-800 text-xl">
-  Proper attribution to the dataset&apos;s creators is required when used in any project or publication.
-</p>
-
-</div>
-
+              <div className="flex items-start space-x-4">
+                <FaCheckCircle className="text-green-500 text-2xl" />
+                <p className="text-gray-800 text-xl">
+                  This dataset is intended solely for academic research,
+                  experimental models, and other non-commercial uses.
+                </p>
+              </div>
+              <div className="flex items-start space-x-4">
+                <FaCheckCircle className="text-green-500 text-2xl" />
+                <p className="text-gray-800 text-xl">
+                  Redistributing the dataset without prior authorization from
+                  the authors is strictly prohibited.
+                </p>
+              </div>
+              <div className="flex items-start space-x-4">
+                <FaCheckCircle className="text-green-500 text-2xl" />
+                <p className="text-gray-800 text-xl">
+                  Proper attribution to the dataset&apos;s creators is required
+                  when used in any project or publication.
+                </p>
+              </div>
 
               {/* License */}
               <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 mb-6 rounded-lg shadow-md">
@@ -849,7 +902,6 @@ const App = () => {
           </div>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-6">
