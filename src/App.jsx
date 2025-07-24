@@ -940,15 +940,9 @@ It supports research and applications in sound classification, urban monitoring,
             >
               <i className="fab fa-github text-2xl hover:text-gray-400"></i>
             </a>
+    
             <a
-              href="https://www.linkedin.com/company/sas-kiit"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin text-2xl hover:text-blue-500"></i>
-            </a>
-            <a
-              href="https://kiitee.kiit.ac.in/"
+              href="https://kiit.ac.in/"
               target="_blank"
               rel="noopener noreferrer"
             >
