@@ -678,11 +678,8 @@ const App = () => {
                 Inspiration
               </h3>
               <p className="text-gray-700 text-xl">
-                The SAS-KIIT dataset was developed for research in computer
-                vision and defense applications, particularly focusing on
-                tracking and identifying military objects in drone-captured
-                imagery. It offers a valuable resource for advancing research in
-                autonomous surveillance and object recognition systems.
+The SAS-KIIT dataset was developed to address the lack of publicly available South Asian environmental sound datasets.
+It supports research and applications in sound classification, urban monitoring, and context-aware AI in underrepresented regions.
               </p>
             </div>
             <div className="space-y-4">
